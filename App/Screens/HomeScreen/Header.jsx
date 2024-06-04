@@ -14,8 +14,8 @@ const Header = () => {
           <View style={styles.profileContainer}>
             <Image source={{ uri: user?.imageUrl }} style={styles.userAvatar} />
             <View>
-              <Text style={{ color: Colour.WHITE }}>Welcome,</Text>
-              <Text style={{ color: Colour.WHITE, fontSize: 20 }}>
+              <Text style={{ color: Colour.WHITE,fontFamily:'outfit' }}>Welcome,</Text>
+              <Text style={{ color: Colour.WHITE, fontSize: 20 ,fontFamily:'outfit-medium'}}>
                 {user?.fullName}
               </Text>
             </View>
@@ -77,6 +77,7 @@ paddingHorizontal:16,
 backgroundColor:Colour.WHITE,
 borderRadius:8,
 width:'85%',
-fontSize:16
+fontSize:16,
+fontFamily:'outfit'
   }
 });
